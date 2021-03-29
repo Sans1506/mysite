@@ -7,7 +7,7 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 app.secret_key = "secretkey"
-app.config['MONGO_URI'] = "mongodb://backend:kjbh34kj34rojbjfd@117.53.44.15:30001,117.53.44.15:30002,117.53.44.15:30003/coworking?authSource=admin&replicaSet=my-mongo-set"
+app.config['MONGO_URI'] = "mongodb://localhost:27017/Coworking"
 oauth = OAuth2Provider(app)
 mongo = PyMongo(app)
 
